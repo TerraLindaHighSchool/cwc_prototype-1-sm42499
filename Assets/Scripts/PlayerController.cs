@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        forwardInput = Input.GetAxis("Verticle");
+        forwardInput = Input.GetAxis("Vertical");
         // Moves the car forward based on verticl input
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         // Rotates the car based on horizontal input
